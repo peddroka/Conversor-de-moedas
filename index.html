@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Moedas Moderno</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Conversor de Moedas</h1>
+        <p>Taxas atualizadas em tempo real</p>
+      </header>
+
+      <main class="converter">
+        <div class="input-group">
+          <label for="amount">Valor</label>
+          <input
+            type="number"
+            id="amount"
+            placeholder="Digite o valor"
+            min="0"
+            step="0.01"
+          />
+        </div>
+
+        <div class="currency-selectors">
+          <div class="input-group">
+            <label for="from">De</label>
+            <select id="from">
+              <option value="BRL">Real Brasileiro (BRL)</option>
+              <option value="USD">Dólar Americano (USD)</option>
+              <option value="EUR">Euro (EUR)</option>
+              <option value="GBP">Libra Esterlina (GBP)</option>
+              <option value="JPY">Iene Japonês (JPY)</option>
+              <option value="CAD">Dólar Canadense (CAD)</option>
+              <option value="AUD">Dólar Australiano (AUD)</option>
+              <option value="CHF">Franco Suíço (CHF)</option>
+              <option value="CNY">Yuan Chinês (CNY)</option>
+              <option value="ARS">Peso Argentino (ARS)</option>
+              <option value="BTC">Bitcoin (BTC)</option>
+              <option value="ETH">Ethereum (ETH)</option>
+            </select>
+          </div>
+
+          <button id="swap-btn" class="swap-btn" aria-label="Inverter moedas">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="17 1 21 5 17 9"></polyline>
+              <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+              <polyline points="7 23 3 19 7 15"></polyline>
+              <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+            </svg>
+          </button>
+
+          <div class="input-group">
+            <label for="to">Para</label>
+            <select id="to">
+              <option value="USD">Dólar Americano (USD)</option>
+              <option value="EUR">Euro (EUR)</option>
+              <option value="BRL">Real Brasileiro (BRL)</option>
+              <option value="GBP">Libra Esterlina (GBP)</option>
+              <option value="JPY">Iene Japonês (JPY)</option>
+              <option value="CAD">Dólar Canadense (CAD)</option>
+              <option value="AUD">Dólar Australiano (AUD)</option>
+              <option value="CHF">Franco Suíço (CHF)</option>
+              <option value="CNY">Yuan Chinês (CNY)</option>
+              <option value="ARS">Peso Argentino (ARS)</option>
+              <option value="BTC">Bitcoin (BTC)</option>
+              <option value="ETH">Ethereum (ETH)</option>
+            </select>
+          </div>
+        </div>
+
+        <button id="convert-btn" class="convert-btn">Converter</button>
+
+        <div class="result">
+          <div class="result-value" id="result-value">0.00</div>
+          <div class="result-info" id="result-info"></div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>Atualizado em: <span id="update-time">--/--/---- --:--</span></p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
