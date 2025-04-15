@@ -1,5 +1,8 @@
-# Conversor-de-moedas
- 📊 Conversor de Moedas Moderno
+📊 Conversor de Moedas Moderno
+
+🌐 Acesse o Conversor
+
+[![Acessar Conversor](https://img.shields.io/badge/🌐_Entre_no_site-Conversor_de_Moedas-4361ee?style=for-the-badge&logo=github)](https://peddroka.github.io/Conversor-de-moedas/)
 Um conversor de câmbio elegante e responsivo que exibe taxas em tempo real com design sofisticado e funcionalidades intuitivas.
 
 ✨ Funcionalidades Principais
@@ -28,6 +31,43 @@ Responsividade: Layout adaptável para mobile, tablet e desktop
 Gradiente animado como plano de fundo
 
 Efeitos de hover suaves e transições elegantes
+
+Tipografia moderna (Inter)
+
+Cores harmoniosas em tons de azul
+
+Ícones SVG nítidos em qualquer resolução
+
+🌐 Como Usar
+Insira o valor a ser convertido
+
+Selecione a moeda de origem no dropdown "De"
+
+Escolha a moeda de destino no dropdown "Para"
+
+O resultado será exibido instantaneamente
+
+Use o botão circular para inverter as moedas
+
+📱 Responsividade
+O conversor se adapta perfeitamente a:
+
+Celulares (a partir de 320px)
+
+Tablets
+
+Desktop
+
+Telas ultrawide
+
+⚙️ Personalização
+O projeto foi desenvolvido com:
+
+Variáveis CSS para fácil customização
+
+Componentes modulares
+
+Código limpo e bem documentado
 
 Tipografia moderna (Inter)
 
